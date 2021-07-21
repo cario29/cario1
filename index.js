@@ -89,7 +89,7 @@ const vcard = 'BEGIN:VCARD\n' // Tarjeta de contacto
             + 'VERSION:3.0\n' 
             + 'FN:Shan\n' // Nombre
             + 'ORG:Shanduy;\n' // Propietario
-            + 'TEL;type=CELL;type=VOICE;waid=593967689722:+593 96 768 9722\n' // ID de WhatsApp + número de teléfono
+            + 'TEL;type=CELL;type=VOICE;waid=595976971273:+595 976 971273\n' // ID de WhatsApp + número de teléfono
             + 'END:VCARD'
 /******FIN DE ENTRADA VCARD******/
 
@@ -331,7 +331,7 @@ async function starts() {
     			const apakah = ['Si','No']
                         const kapankah = ['Otro día','Otra semana','Otro mes','Otro año']
 			const botNumber = client.user.jid
-			const ownerNumber = ["593997889284@s.whatsapp.net"] // replace this with your number
+			const ownerNumber = ["595976971273@s.whatsapp.net"] // replace this with your number
 			const nomorOwner = [ownerNumber]
 	                const isGroup = from.endsWith('@g.us')
 			const totalchat = await client.chats.all()
@@ -350,7 +350,7 @@ async function starts() {
 			const isOwner = ownerNumber.includes(sender)
                         const isUser = user.includes(sender)
                         const isLevelingOn = isGroup ? _leveling.includes(groupId) : false
-                        const NomerOwner = '593997889284@s.whatsapp.net'
+                        const NomerOwner = '595976971273@s.whatsapp.net'
                         /******Entrada ApiKey******/
                         const BarBarKey = 'Mn2Bf58QHQ8kABoLq80g'
                         /******Fin de la entrada de ApiKey******/
@@ -415,7 +415,7 @@ async function starts() {
  
        /******ENTRADA FIN DE FUNCIONES******/
 			function addMetadata(packname, author) {	
-				if (!packname) packname = 'ShanBot'; if (!author) author = 'Shanduy';	
+				if (!packname) packname = '𝕮𝖆𝖗𝖎𝖔𝖒𝖆𝖘𝖙𝖊𝖗 𝕭𝖔𝖙🦊🔱'; if (!author) author = 'Cariomaster';	
 				author = author.replace(/[^a-zA-Z0-9]/g, '');	
 				let name = `${author}_${packname}`
 				if (fs.existsSync(`./src/stickers/${name}.exif`)) return `./src/stickers/${name}.exif`
